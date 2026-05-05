@@ -1,0 +1,23 @@
+# ── Backend ──────
+backend/.env
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.pyc
+backend/.venv/
+backend/venv/
+backend/.pytest_cache/
+
+# ── Frontend ──────
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+frontend/.env
+frontend/.env.*
+
+# ── Editor / OS ──────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.sw?
