@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: prashant-portfolio-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: SMTP_EMAIL
+        sync: false
+      - key: SMTP_APP_PASSWORD
+        sync: false
+      - key: TO_EMAIL
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
