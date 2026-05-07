@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Syne:wght@700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0f0f14;
+  --bg-secondary: #17171f;
+  --bg-elevated: #1f1f2b;
+  --accent: #ff6b35;
+  --accent-dim: #cc4f1e;
+  --accent-glow: rgba(255, 107, 53, 0.15);
+  --text-primary: #f0ede8;
+  --text-secondary: #8a8799;
+  --text-muted: #4a4860;
+  --border: #242330;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+
+  ::selection {
+    background-color: rgba(255, 107, 53, 0.3);
+    color: var(--text-primary);
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+  }
+
+  /* Focus Rings */
+  *:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-10 md:py-16 px-5 md:px-8 lg:px-12;
+  }
+
+  .max-content {
+    @apply max-w-content mx-auto w-full;
+  }
+
+  .section-label {
+    @apply font-body text-text-muted text-xs uppercase tracking-[0.15em] mb-4;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent to-orange-300 bg-clip-text text-transparent;
+  }
+
+  .card-base {
+    @apply bg-bg-secondary border border-border rounded-card transition-all duration-200;
+  }
+
+  .card-hover {
+    @apply hover:bg-bg-elevated hover:border-accent/30 hover:shadow-[0_0_30px_rgba(255,107,53,0.08)];
+  }
+
+  .coral-glow {
+    box-shadow: 0 0 60px var(--accent-glow);
+  }
+
+  .glass-nav {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    background: rgba(15, 15, 20, 0.85);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
