@@ -69,10 +69,8 @@ export default function About() {
                   </div>
                 </div>
 
-                {/* Short bio */}
-                <p className="font-body text-text-secondary text-sm leading-relaxed mb-4 max-w-md">
-                  Third-year ISE undergrad at NMIT Bangalore. I build full-stack apps,
-                  compete on Codeforces, and ship things that solve real problems.
+                <p className="font-body text-text-secondary/95 text-sm leading-relaxed mb-4 max-w-md">
+                  Third-year <span className="text-text-primary font-medium">ISE undergrad</span> at <span className="text-text-primary font-medium">NMIT Bangalore</span>. I build <span className="text-accent font-semibold">full-stack apps</span>, compete on <span className="text-accent font-semibold">Codeforces</span>, and ship things that solve <span className="text-text-primary font-semibold">real problems</span>.
                 </p>
 
                 {/* Tag pills */}
