@@ -18,7 +18,7 @@ export default function Works() {
           >
             <span className="section-label">— PORTFOLIO</span>
 
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold text-text-primary mt-3 mb-4 leading-tight">
+            <h2 className="font-display text-[clamp(36px,5vw,72px)] leading-[0.95] text-text-primary mt-3 mb-4">
               Stuff I've
               <br />
               <span className="text-accent">actually built.</span>

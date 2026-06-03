@@ -43,10 +43,12 @@ export default function CP() {
           className="mb-12"
         >
           <span className="section-label">— JOURNEY</span>
-          <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-text-primary mt-3 mb-6">
+          <h2 className="font-display text-[clamp(36px,5vw,72px)] leading-[0.95] text-text-primary mt-3 mb-10">
             How I got here, <span className="text-accent">year by year.</span>
           </h2>
-          <SkillTimeline />
+          <div className="pt-2">
+            <SkillTimeline />
+          </div>
         </motion.div>
         </div>
       </section>
@@ -61,7 +63,7 @@ export default function CP() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         >
           <span className="section-label">— PROBLEM SOLVING</span>
-          <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-text-primary mt-3 mb-2">
+          <h2 className="font-display text-[clamp(36px,5vw,72px)] leading-[0.95] text-text-primary mt-3 mb-2">
             On the <span className="text-accent">Leaderboard.</span>
           </h2>
           <p className="font-body text-text-secondary text-sm mb-8 max-w-lg">

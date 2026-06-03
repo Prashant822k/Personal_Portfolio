@@ -32,7 +32,7 @@ export default function BeyondCode() {
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
           <span className="section-label">— BEYOND CODE</span>
-          <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-text-primary mt-2 mb-6">
+          <h2 className="font-display text-[clamp(36px,5vw,72px)] leading-[0.95] text-text-primary mt-2 mb-8">
             Not just a <span className="text-accent">developer.</span>
           </h2>
 

@@ -89,6 +89,12 @@
     @apply font-body text-text-muted text-xs uppercase tracking-[0.15em] mb-4;
   }
 
+  /* Fix tight line-height on Syne display headings across all sections */
+  .font-heading {
+    line-height: 1.2 !important;
+    letter-spacing: -0.02em;
+  }
+
   .gradient-text {
     @apply bg-gradient-to-r from-accent to-orange-300 bg-clip-text text-transparent;
   }
