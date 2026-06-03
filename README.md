@@ -78,7 +78,7 @@ uvicorn main:app --reload
 
 - **Frontend** → Vercel (`/frontend` as root, `npm run build`)
 - **Backend** → Render (uses `render.yaml` in `/backend`)
-- **Domain** → `prashantkumar.com` via GoDaddy → Vercel DNS
+- **Domain** → `prashantkumar.site` via GoDaddy → Vercel DNS
 
 ---
 
