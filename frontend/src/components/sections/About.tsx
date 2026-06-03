@@ -6,9 +6,8 @@ import { BackgroundBeamsWithCollision } from '../ui/background-beams-with-collis
 
 const typewriterWords = [
   { text: 'Full Stack Engineer', color: '#ff6b35' },
-  { text: 'ML Systems Builder', color: '#00b8a3' },
+  { text: 'ML Systems Builder', color: '#3b82f6' },
   { text: 'Problem Solver', color: '#ffa116' },
-  { text: 'Open Source Contributor', color: '#3b82f6' },
 ];
 
 export default function About() {
