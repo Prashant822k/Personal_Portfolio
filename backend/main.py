@@ -19,19 +19,11 @@ app = FastAPI(
 app.state.limiter = limiter
 app.add_middleware(SlowAPIMiddleware)
 
-# CORS
-allowed_origins = [
-    "http://localhost:5173",
-    "http://localhost:3000",
-    "https://personal-portfolio-fawn-nu-14.vercel.app",
-    "https://prashantkumar.site",
-    "https://www.prashantkumar.site",
-]
-
+# CORS — allow all origins (public portfolio, no auth/cookies needed)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=allowed_origins,
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
