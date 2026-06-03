@@ -23,7 +23,9 @@ app.add_middleware(SlowAPIMiddleware)
 allowed_origins = [
     "http://localhost:5173",
     "http://localhost:3000",
-    os.getenv("FRONTEND_URL", "http://localhost:5173"),
+    "https://personal-portfolio-fawn-nu-14.vercel.app",
+    "https://prashantkumar.site",
+    "https://www.prashantkumar.site",
 ]
 
 app.add_middleware(
