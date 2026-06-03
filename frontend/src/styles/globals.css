@@ -135,3 +135,19 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Infinite Scrolling Marquee */
+@keyframes scrollX {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-x {
+  display: flex !important;
+  width: max-content !important;
+  animation: scrollX 30s linear infinite !important;
+}

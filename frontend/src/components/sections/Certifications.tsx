@@ -19,30 +19,31 @@ export default function Certifications() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="flex animate-scroll-x"
         >
-          {/* Double the items for seamless loop */}
-          {[...certifications, ...certifications].map((cert, i) => (
-            <div key={`${cert.id}-${i}`} className="flex-shrink-0 mx-2">
-              <div className="flex items-center gap-2 px-4 py-2.5 rounded-full border border-accent/20 bg-bg-secondary/50 hover:border-accent/40 transition-colors cursor-default">
-                <span className="font-body text-xs font-medium text-accent whitespace-nowrap">
-                  {cert.name}
-                </span>
-                <span className="text-text-muted">·</span>
-                <span className="font-body text-xs text-text-muted whitespace-nowrap">
-                  {cert.issuer}
-                </span>
-                {cert.highlight && (
-                  <>
-                    <span className="text-text-muted">·</span>
-                    <span className="font-mono text-[10px] text-accent font-bold whitespace-nowrap">
-                      {cert.highlight}
-                    </span>
-                  </>
-                )}
+          <div className="flex w-max animate-scroll-x">
+            {/* Double the items for seamless loop */}
+            {[...certifications, ...certifications].map((cert, i) => (
+              <div key={`${cert.id}-${i}`} className="flex-shrink-0 mx-2">
+                <div className="flex items-center gap-2 px-4 py-2.5 rounded-full border border-accent/20 bg-bg-secondary/50 hover:border-accent/40 transition-colors cursor-default">
+                  <span className="font-body text-xs font-medium text-accent whitespace-nowrap">
+                    {cert.name}
+                  </span>
+                  <span className="text-text-muted">·</span>
+                  <span className="font-body text-xs text-text-muted whitespace-nowrap">
+                    {cert.issuer}
+                  </span>
+                  {cert.highlight && (
+                    <>
+                      <span className="text-text-muted">·</span>
+                      <span className="font-mono text-[10px] text-accent font-bold whitespace-nowrap">
+                        {cert.highlight}
+                      </span>
+                    </>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>
