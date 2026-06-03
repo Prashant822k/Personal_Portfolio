@@ -2,7 +2,7 @@
 
 A full-stack personal portfolio built with **React + TypeScript** on the frontend and **FastAPI** on the backend. Features animated sections, a 3D project card flip, live contact form with email delivery, and a competitive programming stats section.
 
-> Live at [prashantkumar.com](https://prashantkumar.com)
+> Live at [prashantkumar.site](https://prashantkumar.site)
 
 ---
 
