@@ -62,7 +62,7 @@ export default function About() {
                     </span>
                   </div>
                   <div className="card-base p-3 text-center">
-                    <span className="font-mono text-2xl md:text-3xl font-bold text-text-primary block">9.52</span>
+                    <span className="font-mono text-2xl md:text-3xl font-bold text-text-primary block">9.54</span>
                     <span className="font-body text-[10px] text-text-muted uppercase tracking-wider">
                       CGPA — NMIT
                     </span>
